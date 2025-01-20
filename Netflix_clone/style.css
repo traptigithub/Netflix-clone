@@ -4,8 +4,8 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 .main {
   background-image: url(assests/images/bg.jpg);
@@ -46,7 +46,7 @@ nav button {
 .hero {
   font-family: "Martel Sans", sans-serif;
   color: white;
-  height: 100%;
+  height: calc(100% - 62px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,33 +55,61 @@ nav button {
 
   gap: 23px;
   padding: 0 30px;
-
 }
 
-.hero> :nth-child(1) {
-  font-weight: 950;
+.hero > :nth-child(1) {
+  font-family: "Poppins" sans-serif;
+  /* font-weight: 950; */
+  font-weight: bolder;
   font-size: 50px;
   text-align: center;
 }
-.hero> :nth-child(2) {
+.hero > :nth-child(2) {
   font-weight: 950;
   font-size: 50px;
   text-align: center;
   /* padding-bottom: 20px; */
 }
-.hero> :nth-child(3){
-    font-weight: 520;
-    font-size: 20px;
-    text-align: center;
-    /* padding-bottom: 20px; */
+.hero > :nth-child(3) {
+  font-weight: 520;
+  font-size: 20px;
+  text-align: center;
+  /* padding-bottom: 20px; */
 }
-.hero> :nth-child(4){
-    font-weight: 400;
-    font-size: 15px;
-    text-align: center;
+.hero > :nth-child(4) {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
 }
-.separation{
-    height: 6px;
-    background-color: gray;
-
+.separation {
+  height: 7px;
+  background-color: rgb(52, 51, 51);
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: 500;
+  background-color: white;
+}
+.btn-red {
+  background-color: rgb(229, 1, 1);
+  color: white;
+  padding: 8px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.btn-red-sm {
+  background-color: rgb(229, 1, 1);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-weight: 500;
+  border: none;
+}
+.main input{
+  padding: 8px 48px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
 }
