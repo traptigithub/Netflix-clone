@@ -9,7 +9,7 @@ body {
 }
 .main {
   background-image: url(assests/images/bg.jpg);
-  /* background-position: center center; */
+  background-position: center center;
   /* background-size: max(1200px, 100vw); */
   background-repeat: no-repeat;
   /* height: 95vh; */
@@ -139,10 +139,35 @@ nav button {
 }
 .secImg video {
   position: absolute;
-  top: 65px;
-  right: 37px;
+  top: 99px;
+  right: 22px;
 }
-.second{
+.second {
   display: flex;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+section.first > div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+section.first > div :nth-child(2) {
+  font-size: 24px;
+}
+.faq{
+  color: white;
+  text-align: center;
   
+}
+.faqbox {
+  background-color: rgb(64, 63, 63);
+  display: flex;
+  padding: 20px;
+  width: 60vw;
+  color: white;
 }
