@@ -159,15 +159,32 @@ section.first > div :nth-child(1) {
 section.first > div :nth-child(2) {
   font-size: 24px;
 }
-.faq{
+.faq {
   color: white;
   text-align: center;
+  padding-top: 50px;
+
+
   
+}
+.faq h1{
+  font-size: 45px;
+
 }
 .faqbox {
   background-color: rgb(64, 63, 63);
   display: flex;
+  justify-content: space-between;
   padding: 20px;
-  width: 60vw;
-  color: white;
+  max-width: 70vw;
+  margin: 34px auto;
+  cursor: pointer;
+  
+}
+.faqbox span{
+  font-size: 24px;
+  font-weight: 500;
+}
+.faqbox:hover{
+  background-color: rgb(103, 102, 102);
 }
