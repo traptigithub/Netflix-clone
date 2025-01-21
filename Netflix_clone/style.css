@@ -9,14 +9,15 @@ body {
 }
 .main {
   background-image: url(assests/images/bg.jpg);
-  background-position: center center;
-  background-size: max(1200px, 100vw);
+  /* background-position: center center; */
+  /* background-size: max(1200px, 100vw); */
   background-repeat: no-repeat;
-  height: 95vh;
-  position: relative;
+  /* height: 95vh; */
+  /* position: relative; */
+  height: 100vh;
 }
 .main .box {
-  height: 95vh;
+  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -86,7 +87,7 @@ nav button {
   background-color: rgb(52, 51, 51);
 }
 .btn {
-  padding: 3px 8px;
+  padding: 5px 10px;
   font-weight: 500;
   background-color: rgba(248, 243, 243, 0.02);
   color: white;
@@ -119,4 +120,29 @@ nav button {
   border-radius: 4px;
   color: white;
   border: 1px solid rgb(145, 141, 141);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+}
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 38vw;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  top: 65px;
+  right: 37px;
+}
+.second{
+  display: flex;
+  
 }
