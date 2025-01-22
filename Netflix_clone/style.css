@@ -114,6 +114,10 @@ nav button {
   font-weight: 600;
   border: none;
 }
+.btn-en{
+  
+
+}
 .main input {
   padding: 9px 48px;
   background-color: rgba(23, 23, 23, 0.2);
@@ -164,15 +168,12 @@ section.first > div :nth-child(2) {
   color: white;
   text-align: center;
   padding-top: 50px;
-
-
-  
 }
-.faq h1{
+.faq h1 {
   font-size: 45px;
-
 }
 .faqbox {
+  transition: all 1s ease-out;
   line-height: 20px;
   /* background-color: rgb(53, 53, 53); */
   background-color: #2d2d2d;
@@ -183,38 +184,62 @@ section.first > div :nth-child(2) {
   /* margin: 9px; */
   display: flex;
   justify-content: space-between;
-
-  
 }
-.faqbox span{
+.faqbox span {
   font-size: 24px;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
-.faqbox:hover{
+.faqbox:hover {
   /* background-color: rgb(103, 102, 102); */
   background-color: #414141;
 }
-.lastmail{
+.lastmail {
   width: 60vw;
   color: white;
   text-align: center;
   margin: auto;
   padding: 90px;
-  
 }
-.lastmail div{
+.lastmail div {
   padding: 20px;
   display: flex;
   justify-content: center;
-
-
 }
-.lastmail input{
+.lastmail input {
   width: 30vw;
 }
+footer{
+  padding: 90px;
+  display: grid;
+  grid-template-rows: 30px 30px 30px 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+
+}
 
 
+.line{
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 40px;
+  padding-left: 195px;
 
+}
+.line a{
+  color:  rgba(255, 255, 255, 0.7);
+}
+ul li{
+  list-style: none;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 38px;
 
+}
+ul li a{
+  color: rgba(255, 255, 255, 0.7);
+  
+}
+footer div{
+  display: flex;
+  justify-content: center;
+}
