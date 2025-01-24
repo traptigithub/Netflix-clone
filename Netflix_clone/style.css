@@ -4,6 +4,11 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+html,
+body {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
 body {
   background-color: black;
 }
@@ -85,6 +90,8 @@ nav button {
 .separation {
   height: 7px;
   background-color: rgb(52, 51, 51);
+  position: relative;
+  z-index: 10;
 }
 .btn {
   padding: 5px 10px;
@@ -114,8 +121,7 @@ nav button {
   font-weight: 600;
   border: none;
 }
-.btn-en {
-}
+
 .main input {
   padding: 9px 48px;
   background-color: rgba(23, 23, 23, 0.2);
@@ -132,19 +138,31 @@ nav button {
   margin: auto;
   color: white;
 }
-@media screen and (max-width :1300px){
- 
- .first{
-  flex-wrap: wrap;
- }
- 
-  
+@media screen and (max-width: 1300px) {
+  .first {
+    flex-wrap: wrap;
+  }
+  .hero > :nth-child(1) {
+    font-size: 24px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 24px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 12px;
+  }
+  .input{
+    text-align: center;
+
+  }
+
 }
 .secImg {
   position: relative;
 }
+
 .secImg img {
-  width: 555px;
+  width: 566px;
   position: relative;
   z-index: 10;
 }
@@ -222,11 +240,8 @@ footer {
   grid-template-rows: 30px 30px 30px 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-@media screen and (max-width :1300px){
- 
-  
-   
- }
+@media screen and (max-width: 1300px) {
+}
 
 .line {
   color: rgba(255, 255, 255, 0.7);
