@@ -4,11 +4,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-html,
-body {
-  max-width: 100%;
-  /* overflow-x: hidden; */
-}
+
 body {
   background-color: black;
 }
@@ -138,25 +134,7 @@ nav button {
   margin: auto;
   color: white;
 }
-@media screen and (max-width: 1300px) {
-  .first {
-    flex-wrap: wrap;
-  }
-  .hero > :nth-child(1) {
-    font-size: 24px;
-  }
-  .hero > :nth-child(2) {
-    font-size: 24px;
-  }
-  .hero > :nth-child(3) {
-    font-size: 12px;
-  }
-  .input{
-    text-align: center;
 
-  }
-
-}
 .secImg {
   position: relative;
 }
@@ -240,8 +218,6 @@ footer {
   grid-template-rows: 30px 30px 30px 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-@media screen and (max-width: 1300px) {
-}
 
 .line {
   color: rgba(255, 255, 255, 0.7);
@@ -266,4 +242,62 @@ footer div {
 }
 .netflix {
   padding-bottom: 90px;
+}
+@media screen and (max-width: 1300px) {
+  nav {
+    display: contents;
+    /* max-width: 90vw; */
+  }
+  .first {
+    flex-wrap: wrap;
+  }
+  .hero > :nth-child(1) {
+    font-size: 24px;
+  }
+  .hero > :nth-child(2) {
+    font-size: 18px;
+  }
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+  .input {
+    text-align: center;
+  }
+  .faq h1 {
+    font-size: 24px;
+  }
+  footer {
+    max-width: 90vw;
+  }
+  section.first > div :nth-child(1) {
+    font-size: 40px;
+  }
+  section.first > div :nth-child(2) {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav span {
+    max-width: 90vw;
+  }
+  .lastmail div {
+    display: inline-block;
+  }
+  .faqbox span {
+    font-size: 20px;
+  }
+  .lastmail input {
+    width: 46vw;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+    
+  }
+  .line{
+    padding-left: 90px;
+  }
+ 
 }
