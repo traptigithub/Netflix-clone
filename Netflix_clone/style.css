@@ -7,6 +7,7 @@
 
 body {
   background-color: black;
+  /* min-width: 100vw; */
 }
 .main {
   background-image: url(assests/images/bg.jpg);
@@ -61,9 +62,9 @@ nav button {
 
 .hero > :nth-child(1) {
   font-family: "Poppins" sans-serif;
-  font-weight: 980;
+  font-weight: 990;
   /* font-weight: bolder; */
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
 }
 .hero > :nth-child(2) {
@@ -177,13 +178,11 @@ section.first > div :nth-child(2) {
 .faqbox {
   transition: all 1s ease-out;
   line-height: 20px;
-  /* background-color: rgb(53, 53, 53); */
   background-color: #2d2d2d;
   padding: 26px;
   max-width: 78vw;
   margin: 8px auto;
   cursor: pointer;
-  /* margin: 9px; */
   display: flex;
   justify-content: space-between;
 }
@@ -194,7 +193,6 @@ section.first > div :nth-child(2) {
   align-items: center;
 }
 .faqbox:hover {
-  /* background-color: rgb(103, 102, 102); */
   background-color: #525151;
 }
 .lastmail {
@@ -276,6 +274,19 @@ footer div {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 900px) {
+  .lastmail div {
+    flex-direction: column;
+  }
+  .main input {
+    padding: 11px 99px;
+  }
+  .lastmail {
+    padding: 40px;
+    display: grid;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 400px) {
   nav span {
     max-width: 90vw;
@@ -289,15 +300,17 @@ footer div {
   .lastmail input {
     width: 46vw;
   }
+  .lastmail {
+    padding: 40px;
+    display: grid;
+    justify-content: center;
+  }
   footer {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    
-    
   }
-  .line{
+  .line {
     padding-left: 90px;
   }
- 
 }
