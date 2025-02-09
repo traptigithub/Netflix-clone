@@ -214,10 +214,10 @@ section.first > div :nth-child(2) {
   padding: 20px;
   display: flex;
   justify-content: center;
-  
 }
 .lastmail input {
-  width: 30vw;padding: 9px 48px;
+  width: 30vw;
+  padding: 9px 48px;
   background-color: rgba(23, 23, 23, 0.2);
   font-size: 20px;
   border-radius: 4px;
@@ -307,6 +307,9 @@ footer div {
   nav span {
     max-width: 90vw;
   }
+  .main input {
+    width: 122px;
+  } 
   .lastmail div {
     display: inline-block;
   }
