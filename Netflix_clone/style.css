@@ -4,10 +4,19 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+section div span{
+  position: relative;
+
+}
 
 body {
   background-color: black;
   /* min-width: 100vw; */
+  /* overflow-x: hidden; */
 }
 .main {
   background-image: url(assests/images/bg.jpg);
@@ -250,13 +259,13 @@ footer div {
     flex-wrap: wrap;
   }
   .hero > :nth-child(1) {
-    font-size: 24px;
+    font-size: 29px;
   }
   .hero > :nth-child(2) {
-    font-size: 18px;
+    font-size: 29px;
   }
   .hero > :nth-child(3) {
-    font-size: 18px;
+    font-size: 20px;
   }
   .input {
     text-align: center;
@@ -312,5 +321,8 @@ footer div {
   }
   .line {
     padding-left: 90px;
+  }
+  .main .box {
+    height: 100vh;
   }
 }
