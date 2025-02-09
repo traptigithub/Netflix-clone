@@ -8,9 +8,8 @@ html,
 body {
   overflow-x: hidden;
 }
-section div span{
+section div span {
   position: relative;
-
 }
 
 body {
@@ -215,9 +214,15 @@ section.first > div :nth-child(2) {
   padding: 20px;
   display: flex;
   justify-content: center;
+  
 }
 .lastmail input {
-  width: 30vw;
+  width: 30vw;padding: 9px 48px;
+  background-color: rgba(23, 23, 23, 0.2);
+  font-size: 20px;
+  border-radius: 4px;
+  color: white;
+  border: 1px solid rgb(145, 141, 141);
 }
 footer {
   padding: 90px;
@@ -286,9 +291,11 @@ footer div {
 @media screen and (max-width: 900px) {
   .lastmail div {
     flex-direction: column;
+    align-items: center;
   }
   .main input {
     padding: 11px 99px;
+    width: 140px;
   }
   .lastmail {
     padding: 40px;
